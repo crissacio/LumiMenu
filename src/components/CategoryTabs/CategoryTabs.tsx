@@ -115,101 +115,101 @@ function CategoryTabs({
 
 
 
-return (
+  return (
 
-<div className="category-wrapper">
+    <div
 
+      className={`
+        category-wrapper
 
-<nav
+        ${canScrollLeft ? "show-left" : ""}
 
-ref={tabsRef}
+        ${canScrollRight ? "show-right" : ""}
 
-onScroll={updateScroll}
+      `}
 
-className={
-
-`
-category-tabs
-
-${canScrollLeft ? "show-left" : ""}
-
-${canScrollRight ? "show-right" : ""}
-
-`
-
-}
-
-aria-label="Categorías del menú"
-
->
+    >
 
 
-{
+      <nav
 
-categories.map((category)=>(
+        ref={tabsRef}
 
+        onScroll={updateScroll}
 
-<button
+        className="category-tabs"
 
+        aria-label="Categorías del menú"
 
-key={category}
-
-
-type="button"
-
-
-className={
-
-activeCategory === category
-
-?
-
-"active"
-
-:
-
-""
-
-}
+      >
 
 
-aria-current={
+        {
 
-activeCategory === category
-
-?
-
-"page"
-
-:
-
-undefined
-
-}
+        categories.map((category)=>(
 
 
-onClick={()=>onChange(category)}
+          <button
 
 
->
-
-{category}
+            key={category}
 
 
-</button>
+            type="button"
 
 
-))
+            className={
 
-}
+              activeCategory === category
+
+              ?
+
+              "active"
+
+              :
+
+              ""
+
+            }
 
 
-</nav>
+            aria-current={
+
+              activeCategory === category
+
+              ?
+
+              "page"
+
+              :
+
+              undefined
+
+            }
 
 
-</div>
+            onClick={()=>onChange(category)}
 
-);
+
+          >
+
+            {category}
+
+
+          </button>
+
+
+        ))
+
+        }
+
+
+      </nav>
+
+
+    </div>
+
+  );
 
 
 }
