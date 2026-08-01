@@ -8,6 +8,18 @@ La idea nace de algo cotidiano: escanear un código QR en un restaurante y acced
 
 ---
 
+## Tarjeta QR LumiMenu
+
+<p align="center">
+  <img 
+    src="docs/lumimenu-card.png" 
+    alt="Tarjeta QR LumiMenu"
+    width="350"
+  />
+</p>
+
+---
+
 ## 🌐 Demo
 
 🔗 Próximamente: [LumiMenu Demo](TU_LINK_DE_VERCEL)
