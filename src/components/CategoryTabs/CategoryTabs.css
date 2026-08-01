@@ -200,32 +200,35 @@
     position:absolute;
 
 
-    bottom:-1px;
+    bottom:-14px;
 
 
-    left:10%;
+    left:15%;
 
 
-    width:80%;
+    width:70%;
 
 
-    height:2px;
+    height:3px;
 
 
     background:
 
-    rgba(255,255,255,.12);
+    rgba(255,255,255,.06);
+
+
+    border-radius:20px;
 
 
     overflow:hidden;
 
 
-  }
+    }
 
 
 
 
-  .category-scroll-track span {
+    .category-scroll-track span {
 
 
     display:block;
@@ -237,10 +240,12 @@
     height:100%;
 
 
-    background:#d4af37;
+    background:
+
+    rgba(255,255,255,.25);
 
 
-    border-radius:10px;
+    border-radius:20px;
 
 
     transition:
@@ -248,7 +253,7 @@
     transform .25s ease;
 
 
-  }
+    }
 
 
 
