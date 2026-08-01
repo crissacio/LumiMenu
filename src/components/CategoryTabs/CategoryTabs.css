@@ -77,6 +77,7 @@
   transition:
 
   color .3s ease,
+
   transform .3s ease;
 
 
@@ -154,26 +155,16 @@
 
 
 
-/* Contenedor del indicador */
 
 .category-wrapper {
 
+
   position:relative;
 
-}
-
-
-
-
-/* Indicador de desplazamiento móvil */
-
-.category-scroll-track {
-
-
-  display:none;
-
 
 }
+
+
 
 
 
@@ -181,80 +172,58 @@
 
 
 
-  .category-tabs {
+.category-tabs {
 
 
-    justify-content:flex-start;
+  justify-content:flex-start;
 
 
-  }
+  padding-right:3.5rem;
 
 
-
-  .category-scroll-track {
-
-
-    display:block;
-
-
-    position:absolute;
-
-
-    bottom:-14px;
-
-
-    left:15%;
-
-
-    width:70%;
-
-
-    height:3px;
-
-
-    background:
-
-    rgba(255,255,255,.06);
-
-
-    border-radius:20px;
-
-
-    overflow:hidden;
-
-
-    }
+}
 
 
 
 
-    .category-scroll-track span {
+.category-wrapper::after {
 
 
-    display:block;
+  content:"";
 
 
-    width:45px;
+  position:absolute;
 
 
-    height:100%;
+  right:0;
 
 
-    background:
-
-    rgba(255,255,255,.25);
+  top:0;
 
 
-    border-radius:20px;
+  width:85px;
 
 
-    transition:
-
-    transform .25s ease;
+  height:100%;
 
 
-    }
+  pointer-events:none;
 
 
+  background:
+
+
+  linear-gradient(
+
+    90deg,
+
+    rgba(13,11,9,0),
+
+    rgba(13,11,9,.98)
+
+  );
+
+
+}
 
 }
