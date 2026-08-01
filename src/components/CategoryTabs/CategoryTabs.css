@@ -190,7 +190,7 @@
         top:0;
 
 
-        width:70px;
+        width:90px;
 
 
         height:100%;
@@ -208,12 +208,32 @@
 
         rgba(13,11,9,0),
 
-        rgba(13,11,9,.95)
+        rgba(13,11,9,1)
 
         );
 
 
+         animation: scrollHint 2s ease-in-out infinite;
     }
 
+        @keyframes scrollHint {
 
+
+        0%,
+        100% {
+
+            opacity:.55;
+
+        }
+
+
+        50% {
+
+            opacity:1;
+
+        }
+
+
+        }
+    
 }
