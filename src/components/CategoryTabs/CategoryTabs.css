@@ -40,6 +40,7 @@
 
 
 
+
 .category-tabs button {
 
 
@@ -153,10 +154,31 @@
 
 
 
+/* Contenedor del indicador */
 
-/* Indicador visual de scroll en móvil */
+.category-wrapper {
+
+  position:relative;
+
+}
+
+
+
+
+/* Indicador de desplazamiento móvil */
+
+.category-scroll-track {
+
+
+  display:none;
+
+
+}
+
+
 
 @media(max-width:600px){
+
 
 
   .category-tabs {
@@ -165,75 +187,69 @@
     justify-content:flex-start;
 
 
-    position:relative;
+  }
 
 
-    padding-right:2.5rem;
+
+  .category-scroll-track {
+
+
+    display:block;
+
+
+    position:absolute;
+
+
+    bottom:-1px;
+
+
+    left:10%;
+
+
+    width:80%;
+
+
+    height:2px;
+
+
+    background:
+
+    rgba(255,255,255,.12);
+
+
+    overflow:hidden;
 
 
   }
 
 
 
-    .category-tabs::after {
+
+  .category-scroll-track span {
 
 
-        content:"";
+    display:block;
 
 
-        position:absolute;
+    width:45px;
 
 
-        right:0;
+    height:100%;
 
 
-        top:0;
+    background:#d4af37;
 
 
-        width:90px;
+    border-radius:10px;
 
 
-        height:100%;
+    transition:
+
+    transform .25s ease;
 
 
-        pointer-events:none;
+  }
 
 
-        background:
 
-
-        linear-gradient(
-
-        90deg,
-
-        rgba(13,11,9,0),
-
-        rgba(13,11,9,1)
-
-        );
-
-
-         animation: scrollHint 2s ease-in-out infinite;
-    }
-
-        @keyframes scrollHint {
-
-
-        0%,
-        100% {
-
-            opacity:.55;
-
-        }
-
-
-        50% {
-
-            opacity:1;
-
-        }
-
-
-        }
-    
 }
