@@ -1,0 +1,72 @@
+.restaurant-brand {
+
+  text-align:center;
+
+  padding-top:1.2rem;
+
+  max-width:900px;
+
+  margin:auto;
+
+}
+
+
+.restaurant-location {
+
+  color:#d4af37;
+
+  font-size:.65rem;
+
+  letter-spacing:.35em;
+
+  text-transform:uppercase;
+
+}
+
+
+
+.restaurant-brand h1 {
+
+  margin-top:.8rem;
+
+  font-size:clamp(2rem,5vw,3.2rem);
+
+  font-weight:400;
+
+  letter-spacing:.08em;
+
+}
+
+
+
+.restaurant-description {
+
+  margin-top:.8rem;
+
+  color:#999;
+
+  font-size:.95rem;
+
+}
+
+
+
+.restaurant-info {
+
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:1.5rem;
+
+  flex-wrap:wrap;
+
+  margin-top:1.3rem;
+
+  color:#bdb8af;
+
+  font-size:.85rem;
+
+
+}

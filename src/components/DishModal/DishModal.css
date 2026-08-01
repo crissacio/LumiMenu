@@ -1,0 +1,206 @@
+.modal-overlay {
+
+
+  position:fixed;
+
+
+  inset:0;
+
+
+  background:
+    rgba(0,0,0,.75);
+
+
+  display:flex;
+
+
+  justify-content:center;
+
+
+  align-items:center;
+
+
+  padding:1rem;
+
+
+  z-index:2000;
+
+
+  backdrop-filter:blur(4px);
+
+
+}
+
+
+
+.dish-modal {
+
+
+  background:#16130f;
+
+
+  color:white;
+
+
+  width:min(100%,450px);
+
+
+  max-height:90vh;
+
+
+  overflow-y:auto;
+
+
+  border-radius:18px;
+
+
+  padding:2rem;
+
+
+}
+
+
+
+.dish-modal img {
+
+
+width:100%;
+
+
+border-radius:12px;
+
+
+margin-bottom:1.5rem;
+
+
+aspect-ratio:16 / 10;
+
+
+object-fit:cover;
+
+
+}
+
+
+.dish-modal h2 {
+
+
+  color:#d4af37;
+
+
+  margin-bottom:1rem;
+
+
+  font-size:1.6rem;
+
+
+}
+
+
+
+.dish-modal p {
+
+
+  color:#ccc;
+
+
+  line-height:1.6;
+
+
+  margin-bottom:1.5rem;
+
+
+}
+
+
+
+.dish-modal strong {
+
+
+  display:block;
+
+
+  color:#d4af37;
+
+  margin-top: 1.2rem;
+
+  margin-bottom:1.5rem;
+
+  font-size:1.2rem;
+
+
+}
+
+
+
+.dish-modal button {
+
+
+  width:100%;
+
+
+  padding:.8rem;
+
+
+  border:none;
+
+
+  border-radius:10px;
+
+
+  background:#d4af37;
+
+
+  color:#111;
+
+
+
+  cursor:pointer;
+
+  transition:
+
+  transform .25s ease,
+  background .25s ease;
+
+}
+
+
+
+.dish-modal button:hover {
+
+
+  transform:translateY(-2px);
+
+  background:#e6c45a;
+
+
+}
+
+
+
+.dish-modal button:active {
+
+
+  transform:scale(.97);
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+  .dish-modal {
+
+
+    padding:1.5rem;
+
+
+    border-radius:16px;
+
+
+  }
+
+
+}

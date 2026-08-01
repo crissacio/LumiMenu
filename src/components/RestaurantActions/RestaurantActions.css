@@ -1,0 +1,120 @@
+.restaurant-actions {
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+flex-wrap:wrap;
+
+
+gap:.7rem;
+
+
+margin:
+
+1.5rem auto 2rem;
+
+
+}
+
+
+
+.restaurant-actions a,
+
+.restaurant-actions button {
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+padding:.45rem .9rem;
+
+
+border-radius:999px;
+
+
+border:
+
+1px solid rgba(212,175,55,.25);
+
+
+background:transparent;
+
+
+color:#aaa;
+
+
+text-decoration:none;
+
+
+cursor:pointer;
+
+
+transition:
+
+all .25s ease;
+
+
+font-size:.8rem;
+
+
+}
+
+
+
+.restaurant-actions a:hover,
+
+.restaurant-actions button:hover {
+
+
+background:rgba(212,175,55,.12);
+
+
+border-color:#d4af37;
+
+
+color:#d4af37;
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.restaurant-actions {
+
+
+gap:.5rem;
+
+margin-bottom:1.5rem;
+
+
+}
+
+
+
+.restaurant-actions a,
+
+.restaurant-actions button {
+
+
+min-width:auto;
+
+padding:.5rem 1rem;
+
+
+}
+
+
+}

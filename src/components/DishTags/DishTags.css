@@ -1,0 +1,173 @@
+.dish-tags {
+
+
+display:flex;
+
+
+flex-wrap:wrap;
+
+
+gap:.65rem;
+
+
+margin-top:1.4rem;
+
+
+}
+
+
+
+.dish-tags span {
+
+
+font-size:.72rem;
+
+
+padding:.4rem .8rem;
+
+
+border-radius:999px;
+
+
+letter-spacing:.03em;
+
+
+border:1px solid;
+
+
+transition:
+
+transform .25s ease,
+background .25s ease;
+
+
+}
+
+
+
+.dish-tags span:hover {
+
+
+transform:translateY(-2px);
+
+
+}
+
+
+
+/* Chef */
+
+.tag-chef {
+
+
+background:rgba(212,175,55,.18);
+
+
+border-color:rgba(212,175,55,.45);
+
+
+color:#d4af37;
+
+
+}
+
+
+
+/* Vegetariano */
+
+.tag-vegetarian {
+
+
+background:rgba(76,175,80,.12);
+
+
+border-color:rgba(76,175,80,.35);
+
+
+color:#81c784;
+
+
+}
+
+
+
+/* Vegano */
+
+.tag-vegan {
+
+
+background:rgba(129,199,132,.12);
+
+
+border-color:rgba(129,199,132,.35);
+
+
+color:#a5d6a7;
+
+
+}
+
+
+
+/* Sin TACC */
+
+.tag-gluten {
+
+
+background:rgba(255,255,255,.06);
+
+
+border-color:rgba(255,255,255,.15);
+
+
+color:#ddd;
+
+
+}
+
+
+
+/* Picante */
+
+.tag-spicy {
+
+
+background:rgba(198,40,40,.15);
+
+
+border-color:rgba(198,40,40,.35);
+
+
+color:#ef9a9a;
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.dish-tags {
+
+
+gap:.5rem;
+
+
+}
+
+
+
+.dish-tags span {
+
+
+font-size:.68rem;
+
+
+padding:.35rem .65rem;
+
+
+}
+
+
+}

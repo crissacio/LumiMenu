@@ -1,0 +1,186 @@
+.dish-card {
+
+
+  display:flex;
+
+
+  justify-content:space-between;
+
+
+  gap:1.5rem;
+
+
+  padding:1.5rem 0;
+
+
+  border-bottom:
+
+  1px solid rgba(255,255,255,.08);
+
+
+  cursor:pointer;
+
+
+  transition:
+
+  transform .3s ease,
+  border-color .3s ease,
+  background .3s ease;
+
+
+}
+
+
+
+.dish-card:hover {
+
+
+  transform:translateX(5px);
+
+
+  border-color:
+
+  rgba(212,175,55,.35);
+
+
+}
+
+
+
+.dish-card:active {
+
+
+  transform:scale(.99);
+
+
+}
+
+
+
+.dish-info {
+
+
+  flex:1;
+
+
+}
+
+
+
+.dish-card h3 {
+
+
+  color:#f5f1e8;
+
+
+  font-size:1.1rem;
+
+
+  font-weight:500;
+
+
+  letter-spacing:.04em;
+
+
+  margin-bottom:.55rem;
+
+
+}
+
+
+
+.dish-card p {
+
+
+  color:#9f9a92;
+
+
+  font-size:.9rem;
+
+
+  line-height:1.65;
+
+
+  max-width:520px;
+
+
+}
+
+
+
+.dish-card strong {
+
+
+  color:#d4af37;
+
+
+  font-weight:500;
+
+
+  white-space:nowrap;
+
+
+  font-size:1rem;
+
+
+  letter-spacing:.03em;
+
+
+}
+
+
+
+.dish-card:focus-visible {
+
+
+  outline:
+
+  2px solid #d4af37;
+
+
+  outline-offset:4px;
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+  .dish-card {
+
+
+    flex-direction:column;
+
+
+    gap:.7rem;
+
+
+    padding:1.4rem 0;
+
+
+  }
+
+
+
+  .dish-card h3 {
+
+
+    font-size:1.05rem;
+
+
+  }
+
+
+
+  .dish-card strong {
+
+
+    font-size:.95rem;
+
+
+  }
+
+
+}

@@ -1,0 +1,143 @@
+.dish-image-container {
+
+
+  width:100%;
+
+
+  margin-bottom:1.5rem;
+
+
+  overflow:hidden;
+
+
+  border-radius:14px;
+
+
+}
+
+
+
+.dish-image-container img {
+
+
+  width:100%;
+
+
+  display:block;
+
+
+  border-radius:14px;
+
+
+  object-fit:cover;
+
+
+  aspect-ratio:16 / 10;
+
+
+  animation:imageReveal .5s ease;
+
+
+}
+
+
+
+.dish-image-placeholder {
+
+
+  width:100%;
+
+
+  aspect-ratio:16 / 10;
+
+
+  border-radius:14px;
+
+
+  background:
+
+
+  radial-gradient(
+
+  circle at top,
+
+  rgba(212,175,55,.18),
+
+  transparent 45%
+
+  ),
+
+  linear-gradient(
+
+  135deg,
+
+  #1c1915,
+
+  #0d0b09
+
+  );
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  color:#d4af37;
+
+
+  font-size:.85rem;
+
+
+  letter-spacing:.25em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+.dish-image-placeholder span {
+
+
+  opacity:.8;
+
+
+}
+
+
+
+@keyframes imageReveal {
+
+
+  from {
+
+
+    opacity:0;
+
+
+    transform:scale(1.03);
+
+
+  }
+
+
+  to {
+
+
+    opacity:1;
+
+
+    transform:scale(1);
+
+
+  }
+
+
+}

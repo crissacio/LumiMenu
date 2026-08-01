@@ -1,0 +1,16 @@
+{
+  "name": "LumiMenu",
+  "short_name": "LumiMenu",
+  "description": "Carta digital premium para restaurantes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0b09",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

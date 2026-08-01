@@ -1,0 +1,120 @@
+:root {
+
+  font-family:
+    "Inter",
+    system-ui,
+    sans-serif;
+
+  color:#fff;
+
+  background:#0d0b09;
+
+}
+
+
+* {
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
+}
+
+
+body {
+
+  min-width:320px;
+
+  min-height:100vh;
+
+}
+
+
+#root {
+
+  min-height:100vh;
+
+}
+
+
+button,
+input {
+
+  font:inherit;
+
+}
+
+
+section {
+
+  width:min(100% - 2rem, 900px);
+
+  margin-inline:auto;
+
+}
+
+.home {
+
+  padding-top: 3rem;
+
+  padding-bottom: 4rem;
+
+}
+
+
+
+.restaurant-header {
+
+  text-align:center;
+
+  margin-bottom:3rem;
+
+}
+
+
+.restaurant-header p {
+
+  color:#d4af37;
+
+  text-transform:uppercase;
+
+  letter-spacing:.3em;
+
+  font-size:.75rem;
+
+}
+
+
+
+.restaurant-header h1 {
+
+  margin-top:1rem;
+
+  font-size:clamp(2rem,6vw,3.5rem);
+
+  font-weight:500;
+
+}
+
+
+
+.restaurant-header span {
+
+  display:block;
+
+  margin-top:1rem;
+
+  color:#aaa;
+
+}
+*:focus-visible {
+
+  outline:
+
+  2px solid #d4af37;
+
+  outline-offset:3px;
+
+}
